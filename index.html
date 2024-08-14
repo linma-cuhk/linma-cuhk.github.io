@@ -62,52 +62,52 @@
             font-size: 0.9em;
             color: #777;
         }
+        .pdf-link:before {
+            content: "📄 ";
+        }
+        .external-link:after {
+            content: " 🔗";
+            font-size: 0.8em;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to Lin MA's Personal Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
     
     <main>
         <section id="home">
+            <h2>About Me</h2>
             <p>Hello! 你好！</p>
             
             <p>I am <span class="highlight">Lin MA</span>, a Finance Ph.D. student at the Chinese University of Hong Kong (CUHK).</p>
             
-            <p>My research interests include:</p>
+            <p>My research focuses on exploring financial frictions in the real world, with particular interests in:</p>
             <ul>
                 <li>Corporate Finance</li>
                 <li>Financial Technology</li>
                 <li>Banking</li>
             </ul>
             
-            <p>I'm passionate about exploring the financial friction in the real world.</p>
+            <p>Through my research, I aim to contribute to our understanding of how financial systems interact with and impact the broader economy.</p>
         </section>
         
         <section id="cv" class="cv">
             <h2>Curriculum Vitae</h2>
-            <p>You can download my CV <a href="resource/MA_Lin_CV.pdf" target="_blank">here</a>.</p>
+            <p>You can download my CV <a href="resource/MA_Lin_CV.pdf" target="_blank" class="pdf-link">here</a>.</p>
         </section>
 
         <section id="research" class="research">
             <h2>Research</h2>
             <div class="paper">
                 <h3>Publications</h3>
-                <p>"Digital Transformation of Commercial Banks and Labor Demand: Creation or Destruction?" (with Minggui Yu and Kong Wang), <i>Journal of Management World</i>, Volume(10), 2022.</p>
+                <p>"Digital Transformation of Commercial Banks and Labor Demand: Creation or Destruction?" (with <a href="https://dtfe.zuel.edu.cn/szjsyxdjryw-szjsyw_kytd/szjsyxdjryw_cont_person/details-33621.html" target="_blank" class="external-link">Minggui Yu</a> and Kong Wang), <i>Journal of Management World</i>, Volume(10), 2022. <a href="resource/papers/Digital_Transformation_of_Commercial_Banks_and_Labor_Demand.pdf" target="_blank" class="pdf-link">[PDF]</a></p>
             </div>
             <div class="paper">
                 <h3>Working Papers</h3>
                 <ul>
-                    <li>"Bankruptcy Enforcement and Firm's Employment: Evidence from the Judicial Reform of Enterprise Bankruptcy in China" (with <a href="https://dtfe.zuel.edu.cn/szjsyxdjryw-szjsyw_kytd/szjsyxdjryw_cont_person/details-33621.html" target="_blank">Minggui Yu</a> and Haofan Qiang)</li>
+                    <li>"Bankruptcy Enforcement and Firm's Employment: Evidence from the Judicial Reform of Enterprise Bankruptcy in China" (with <a href="https://dtfe.zuel.edu.cn/szjsyxdjryw-szjsyw_kytd/szjsyxdjryw_cont_person/details-33621.html" target="_blank" class="external-link">Minggui Yu</a> and Haofan Qiang)</li>
                 </ul>
             </div>
         </section>
@@ -117,7 +117,10 @@
             <ul>
                 <li>WeChat Official Account: "南湖晚风"</li>
                 <li>Email: <a href="mailto:linma@link.cuhk.edu.hk">linma@link.cuhk.edu.hk</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/martin-ma-9924a6210" target="_blank">Martin MA</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/martin-ma-9924a6210" target="_blank" class="external-link">Martin MA</a></li>
+                <!-- 如果有的话，可以添加以下内容 -->
+                <!-- <li>Google Scholar: <a href="YOUR_GOOGLE_SCHOLAR_LINK" target="_blank" class="external-link">Lin MA</a></li> -->
+                <!-- <li>ORCID: <a href="YOUR_ORCID_LINK" target="_blank" class="external-link">Lin MA</a></li> -->
             </ul>
         </section>
     </main>
