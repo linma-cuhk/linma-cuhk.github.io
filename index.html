@@ -33,23 +33,6 @@
         .paper {
             margin-bottom: 20px;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #3498db;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            color: #2c3e50;
-        }
         a {
             color: #3498db;
             text-decoration: none;
@@ -69,6 +52,31 @@
             content: " 🔗";
             font-size: 0.8em;
         }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .profile-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -79,16 +87,19 @@
     <main>
         <section id="home">
             <h2>About Me</h2>
-            <p>Hello!</p>
-            
-            <p>I am <span class="highlight">Lin MA</span>, a Finance Ph.D. student at the Chinese University of Hong Kong (CUHK).</p>
-            
-            <p>My research focuses on exploring financial frictions in the real world, with particular interests in:</p>
-            <ul>
-                <li>Corporate Finance</li>
-                <li>Financial Technology</li>
-                <li>Banking</li>
-            </ul>
+            <div class="profile-container">
+                <img src="path_to_your_photo.jpg" alt="Lin MA" class="profile-image">
+                <div>
+                    <p>Hello!</p>
+                    <p>I am <span class="highlight">Lin MA</span>, a Finance Ph.D. student at the Chinese University of Hong Kong (CUHK).</p>
+                    <p>My research focuses on exploring financial frictions in the real world, with particular interests in:</p>
+                    <ul>
+                        <li>Corporate Finance</li>
+                        <li>Financial Technology</li>
+                        <li>Banking</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         
         <section id="cv" class="cv">
